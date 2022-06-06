@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>html</title>
+	<style>
+		/* 
+           color:  thay đổi màu chữ;
+           text-decoration: underline: gạch chân
+           font-style: italic :in nghiêng chữ
+           font-family: thay đổi phông chữ trang web thành không chân
+           letter-spacing:  thay đổi khoảng cách giữa các ký tự
+		 */
+		body{
+             background-color: #148DE1  ;
+             font-family: tahoma;
+		}
+
+		h1{
+			color: white;
+			background-color: #355165 ;
+			border-radius: 10px;
+			width: fit-content;
+			padding: 20px;
+			margin-left: 30%;
+		}
+		h2{
+			/*background-color: yellow;*/
+			color: white;
+			letter-spacing: 4px;
+		}
+
+		#general{
+			text-decoration: underline;
+		}
+		.italic{
+			font-style: italic;
+		}
+		img{
+			border: 3px dashed black;
+			border-radius:50px;
+			margin-left: 30%;
+		}
+		table,th,td {
+			border: 5px dotted white;
+			border-collapse: collapse;
+            width: 3px;       
+		}
+	</style>
+</head>
+<body>
+	<!-- Heading h1 h2 h3 h4 h5 h6 -->
+	<h1>Tran Duc Kien portfolio</h1>
+	<img src="./hinh.jpg" alt="" height="300px" width="400">
+	<hr>
+	<video src="./y2mate.com - COSTA RICA IN 4K 60fps HDR ULTRA HD_480p.mp4"controls width="auto" height="400"></video>
+	<hr>
+	<h2 id="general">General Information</h2>
+	
+	<h3 class="italic">Name</h3>
+	<p><mark> Trần Đức Kiên</mark></p>
+	<h3 class="italic">Year old</h3>
+	<p>19</p>
+	<h3 class="italic">Date of birth</h3>
+	<p>10/07/2003</p>
+	<h3 class="italic">Address</h3>
+	<p>Tổ1 Thạch Bàn Long Biên Hà Nội</p>
+	<h3 class="italic">Phone number</h3>
+	<p><strong>0388063982</strong></p>
+    <h3 class="italic">Email</h3>
+    <p>trankien4c@gmail.com</p>
+    <h3 class="italic">Gender</h3>
+    <p>Male</p>
+    <h3 class="italic">Link github</h3>
+    <p><del>https://www.facebook.com/login/identify?ctx=login&lwv=100</del></p>
+
+    <hr>
+<!-- img thẻ hiển thị ảnh  -->
+	<h2>Work Experience</h2>
+	<ol>
+		<li>studen</li>
+		<li>vice-cook</li>
+		<li>Staff</li>
+	</ol>
+<!-- ol (ordered list) danh sách có thứ tự-->
+	<hr>
+	<h2>Favorite Musics</h2>
+    <!-- ul (unordered list) danh sách không có thứ tự -->
+	<ul>
+		<li>Chắc ai đó sẽ về </li>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/PdbsnGuduvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<li>Chìm sâu </li>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Yw9Ra2UiVLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<li>Ngày xưa em đến </li>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/zw2tRWc6jAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</ul>
+
+	<hr>
+	
+	<h2>Contact</h2>
+	<a href="https://www.google.com/">google</a>
+
+	<h2>My projects</h2>
+	<table>
+		<tr>
+			<th>No.</th>
+			<th>Project name</th>
+		</tr>
+
+		<tr>
+			<td>1.</td>
+			<td>Portfolio page</td>
+		</tr>
+
+		<tr>
+			<td>2.</td>
+			<td>Twitter Page</td>
+		</tr>
+
+		<tr>
+			<td>3.</td>
+			<td>Cat ID </td>
+		</tr>
+	</table>
+
+</body>
+</html>
