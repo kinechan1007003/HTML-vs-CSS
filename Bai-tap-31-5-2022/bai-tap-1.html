@@ -4,42 +4,112 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bai tap</title>
+    <style>
+        div{
+            background-color: skyblue;
+            font-size: 14.5px;
+            border: 0.5px solid grey;
+            width: 25%;
+            margin-left: 35%;
+        }
+        div, img, textarea, h2, button, .input{
+            border: 0.5px solid black;
+            border-radius: 5px;
+        }
+        h1{
+            margin: 30px 50px;
+            width: fit-content;
+            font-size: 25px;
+            text-align: center;  
+            margin-left: 15%;
+            padding: 10px; 
+        }
+        form{            
+            margin-bottom: 30px;
+            margin-left: 15%;
+        }
+        textarea{
+            width: 80%;
+        }
+
+        img{
+            width: 35%;
+            margin-left: 30%;
+        }
+        label{
+            font-family: tahoma;
+            font-size: 18px;
+        }
+        input{
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .input1{
+            width: 80%;
+            height: 25px;
+            border: 0.5px solid black;
+            border-radius: 5px;
+        }        
+    </style>
 </head>
 <body>
+    <div>
 	<h1>Cat City ID Registration</h1>
 	<br>
 	<img src="hinh.webp" width="auto" height="90">
-	<form>
-		Name:<br>
-		<input type="text" name="">
-		<p>Age:<br>
-		<input type="text" name=""></p>
-		Gender:<br>
-		<input type="radio" name="gioitinh" value="Made"> Made
-        <input type="radio" name="gioitinh" value="Nữ"> Female
-        <input type="radio" name="gioitinh" value="Khác"> Other
-        <br>
-        <p>Fur Color:<br>
-        <input type="radio" name="gioitinh" value="Đen"> Đen 
-        <input type="radio" name="gioitinh" value="Trắng"> Trắng
-        <input type="radio" name="gioitinh" value="Vàng"> Vàng</p>
-        <p>Cats loves to:<br>
-        <input type="checkbox" name="love1" value="Eat">Eat
-        <input type="checkbox" name="love1" value="DrinkMilk">Drink Milk
-        <input type="checkbox" name="love1" value="Sleep">Sleep</p>
-        <label for="">Cat Breed:</label>
-                    <select name=""id="">
-                        <option value="">Siamese</option>
-                        <option value="">Sphynx</option>
-                        <option value="">Gold</option>
-                    </select>
-        <p>Cat ID:<br>            
-        <input type="text" name=""></p> 
-        <p>Other information<br>
-        <textarea name="info" rows="6" cols="30"></textarea></p>
-        <button type="reset">Reset</button>
-        <button type="finish">Finish</button>           
-	</form>
+    <br>
+    <br>
 
+    <form>
+        <label for="">Name:</label><br>
+        <input type="text"><br><br>
+
+        <label>Age:</label><br>
+        <input type="text" name="">
+
+        <br><br>
+        <label for="">Gender:</label><br>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+        <br><br>
+
+        <label for="Fur Color">Fur Color: </label><br>
+        <input type="radio" name="Fur Color" value="Đen">Đen
+        <input type="radio" name="Fur Color" value="Trắng">Trắng
+        <input type="radio" name="Fur Color" value="Vàng">Vàng
+        <br><br>
+
+        <label>Cat loves to:</label><br />
+        <input type="checkbox" value="1" />Eat
+        <input type="checkbox" value="2" />Drink Milk
+        <input type="checkbox" value="3" />Sleep
+        <br><br>
+
+        <label>Cat hates:</label><br>
+        <input type="checkbox" value="bath"> Bath
+        <input type="checkbox" value="hug"> Hug
+        <input type="checkbox" value="other-cat"> Other cat 
+        <br><br>
+
+        <label for="">Cat Breed:</label>
+        <select name="" id="">
+            <option value="">Siamese</option>
+            <option value="">Scottish Fold</option>
+            <option value=""> Sphynx</option>
+        </select> <br>
+        <br>
+
+        <label for=""><b>Cat ID</b></label><br>
+        <input type="number" class="input1"><br>
+
+        <label for=""><b>Other infomation</b></label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+
+        <button type="submit">Finish!</button>
+        <button type="reset">Reset</button>
+    </div>
+    </form>
 </body>
+
 </html>
